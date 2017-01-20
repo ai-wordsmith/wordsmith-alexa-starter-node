@@ -46,7 +46,7 @@ MyAlexaSkill.prototype.eventHandlers.onSessionEnded = function (sessionEndedRequ
 
 MyAlexaSkill.prototype.intentHandlers = {
     // register custom intent handlers
-    "makeMeme": function (intent, session, response) {
+    "YOUR_INTENT_HERE": function (intent, session, response) {
       wordsmith.projects.find('YOUR_WORDSMITH_PROJECT_SLUG')
         .then(project => project.templates.find('YOUR_WORDSMITH_TEMPLATE_SLUG'))
         .then(template => template.generate(YOUR_DATA_OBJECT))
