@@ -1,0 +1,17 @@
+{
+  "name": "wordsmith-alexa-starter-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "aws lambda invoke --function-name \"YOUR_FUNCTION\" --payload fileb://PATH_TO_DIRECTORY/test/invocation.json test/out.txt && cat test/out.txt",
+    "update": "npm run zip && npm run upload",
+    "upload": "aws lambda update-function-code --function-name \"YOUR_FUNCTION\" --zip-file fileb://PATH_TO_DIRECTORY/build/lambda.zip",
+    "zip": "zip -r build/lambda.zip . -x \"package.json\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "wordsmith-node-sdk": "^1.1.0"
+  }
+}
