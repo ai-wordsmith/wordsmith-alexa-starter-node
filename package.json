@@ -8,7 +8,7 @@
     "test": "node test/test.js",
     "update": "npm run zip && npm run upload",
     "upload": "aws lambda update-function-code --function-name \"YOUR_FUNCTION\" --zip-file fileb://PATH_TO_DIRECTORY/build/lambda.zip",
-    "zip": "zip -r build/lambda.zip . -x \"package.json\""
+    "zip": "zip -r build/lambda.zip . -x \"package.json\" -x \"*.git*\""
   },
   "author": "",
   "license": "ISC",

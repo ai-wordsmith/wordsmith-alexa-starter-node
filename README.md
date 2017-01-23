@@ -11,6 +11,6 @@ Pre-requisite: Install and login to the [AWS Command-line Interface (CLI)](https
 5. Update the sample Lambda invocation data in `test/invocation.json`. This JSON file simulates what the Alexa service will send you during an `IntentRequest` for your Skill. The most important bit to update is the `request.intent` key with your intent's name and any slot data you need.
 6. Run `npm test` to test out your Lambda locally
 7. Use `npm run update` to upload your code to your AWS Lambda function
-8. Run `npm test` to see the result of calling your actual, cloud-based Lambda function with the invocation data.
+8. Run `npm test` to see the result of calling your actual, cloud-based Lambda function with the invocation data
 
 Once everything is working like you want, you can use the [Alexa developer console](https://developer.amazon.com/alexa) to test out your Alexa Utterances using your new Lambda function.
